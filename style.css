@@ -423,3 +423,17 @@ color: white;
         margin-bottom: -6px;
     }
     }
+ #errMsg{
+        display: none;
+    }
+    @keyframes fadeOut {
+        to { opacity: 0; display: none; }
+    }
+
+    #errMsg.show {
+      display: block;
+        animation: fadeOut 1s ease-in-out 2s forwards;
+        font-family: var(--font-body);
+        font-size: 1rem;
+    }
+    
